@@ -1,0 +1,12 @@
+{
+  "name": "@henrim/release-test",
+  "version": "0.0.1",
+  "packageManager": "yarn@3.2.4",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "semantic-release": "19.0.5"
+  },
+  "main": "index.js"
+}
