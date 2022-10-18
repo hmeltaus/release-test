@@ -12,14 +12,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "release-test",\
+        "name": "@henrim/release-test",\
         "reference": "workspace:."\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["release-test", ["workspace:."]]\
+      ["@henrim/release-test", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -80,6 +80,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@gar/promisify", "npm:1.1.3"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@henrim/release-test", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["@henrim/release-test", "workspace:."],\
+            ["semantic-release", "npm:19.0.5"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@isaacs/string-locale-compare", [\
@@ -4013,16 +4023,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rc", "npm:1.2.8"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["release-test", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["release-test", "workspace:."],\
-            ["semantic-release", "npm:19.0.5"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["require-directory", [\
