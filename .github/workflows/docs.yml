@@ -1,0 +1,14 @@
+name: API docs
+
+on:
+  create:
+    tags:
+      - '*'
+
+jobs:
+
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "tag is ${{ github.ref_name }}"
